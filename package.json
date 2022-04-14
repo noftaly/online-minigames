@@ -1,0 +1,37 @@
+{
+  "name": "online-minigames",
+  "version": "1.0.0",
+  "description": "An online minigames website",
+  "main": "app.js",
+  "scripts": {
+    "start": "babel-node app.js",
+    "dev": "nodemon --exec babel-node app.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "author": "Elliot 'noftaly' Maisl",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.6",
+    "eslint-plugin-node": "^11.1.0",
+    "express": "^4.17.3",
+    "helmet": "^5.0.2",
+    "mongoose": "^6.2.2",
+    "morgan": "^1.10.0",
+    "nanoid": "^3.3.1",
+    "socket.io": "^4.4.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "eslint": "^8.9.0",
+    "eslint-config-noftalint": "^2.3.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-unicorn": "^41.0.0",
+    "nodemon": "^2.0.15"
+  }
+}

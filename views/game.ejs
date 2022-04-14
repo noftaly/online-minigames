@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <style>
+    html {
+      margin: 2rem;
+    }
+  </style>
+
+  <title>Morpion</title>
+</head>
+
+<body>
+  <h1>Welcome in your game server</h1>
+
+  <p id="infos"></p>
+
+  <div id="gameArea" style="display: none;"></div>
+
+  <button id="disconnect-button" class="btn btn-sm btn-danger my-3">Quit the game server</button>
+  <br />
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/addons/p5.sound.min.js"></script>
+
+  <script src="/js/game/main.js" defer></script>
+  <% if (type===0) { %>
+    <script src="/js/game/tictactoe.js" defer></script>
+    <% } else if (type===1) { %>
+      <script src="/js/game/connect4.js" defer></script>
+      <% } %>
+
+</body>
+
+</html>
